@@ -45,4 +45,5 @@ end
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-basscss-sass'
+  gem 'rails-assets-fontawesome'
 end
