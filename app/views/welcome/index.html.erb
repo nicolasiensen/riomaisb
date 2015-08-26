@@ -1,28 +1,103 @@
 <div class="container">
-  <div class="bg-white py1 flex flex-center">
-    <div class="flex flex-auto">
-      <div>Rio + B</div>
-    </div>
-    <div class="right">
-      <a class="btn caps h5 p1" href="#">O que é o Rio+B?</a>
-      <a class="btn caps h5 p1" href="#">O que a empresa e a cidade ganham?</a>
-      <a class="btn caps h5 p1" href="#">Como funciona o programa?</a>
-      <a class="btn btn-primary bg-lime green caps h5" href="#">Participar</a>
+  <div class="clearfix">
+    <div class="col col-12 px2">
+      <div class="py1 flex flex-center">
+        <div class="flex flex-auto">
+          <%= link_to root_path do
+            image_tag("riomaisb.png", class: "left")
+          end %>
+        </div>
+        <div class="right">
+          <div class="md-show">
+            <a class="btn caps h6 p1" href="#">O que é o Rio+B?</a>
+            <a class="btn caps h6 p1" href="#">O que a empresa e a cidade ganham?</a>
+            <a class="btn caps h6 p1" href="#">Como funciona?</a>
+            <a class="btn btn-primary bg-lime green caps h6" href="#">Participar</a>
+          </div>
+          <div class="md-hide">
+            <div class="relative inline-block dropdown" data-disclosure>
+              <button class="btn rounded fa fa-bars"></button>
+              <div data-details class="fixed top-0 right-0 bottom-0 left-0 dropdown-overlay"></div>
+              <div data-details class="absolute right-0 mt2 nowrap bg-white rounded dropdown-menu">
+                <a class="btn caps h6 p1 block" href="#">O que é o Rio+B?</a>
+                <a class="btn caps h6 p1 block" href="#">O que a empresa e a cidade ganham?</a>
+                <a class="btn caps h6 p1 block" href="#">Como funciona?</a>
+                <a class="btn btn-primary bg-lime green caps h6 block" href="#">Participar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="bg-green py1">
+<div class="bg-green py1 bg-cover bg-center bg-city">
   <div class="container center white py4">
-    <h1 class="mt0 mb2 caps">
-      Is your business among the Best in NYC?<br />
-      Join us in becoming the Best for NYC!
-    </h1>
-    <div>Take the Best for NYC Challenge</div>
-    <div>Improve your business’s impact</div>
-    <div>Be recognized as “Competing to be Best for NYC”</div>
-    <div class="mt3">
-      <a class="btn btn-primary bg-lime green caps h3 m0 p2 px4" href="#">Participar</a>
+    <div class="clearfix">
+      <div class="col col-12 px2">
+        <h1 class="mt0 mb2 caps">
+          Is your business among the Best in NYC?<br />
+          Join us in becoming the Best for NYC!
+        </h1>
+        <div>Take the Best for NYC Challenge</div>
+        <div>Improve your business’s impact</div>
+        <div>Be recognized as “Competing to be Best for NYC”</div>
+        <div class="mt3">
+          <a class="btn btn-primary bg-lime green caps h3 m0 p2 px4" href="#">Participar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container py3">
+  <div class="clearfix">
+    <div class="col col-12 sm-col-12 md-col-6 px2">
+      <h2 class="green caps mt0 mb2">O que é o Rio+B?</h2>
+      <p>
+        O <strong>Rio+B</strong> é um programa que incentiva empresas e redes de negócios a gerar
+        impactos positivos para a cidade do Rio de Janeiro. A iniciativa é uma
+        parceria entre a Prefeitura do Rio, através do Rio Resiliente, o
+        Sistema B e a The League of Intrapreneurs.
+      </p>
+      <p>
+        O primeiro ciclo do programa terá duração de um ano, entre agosto de
+        2015 e agosto de 2016, e será divido em avaliação da empresa e do setor,
+        análise de dados, diagnóstico de impactos e o plano de ações. Dentro do
+        programa, líderes de empresas irão se reunir e conciliar a agenda dos
+        seus negócios com as ferramentas estratégicas para alcançar os resultados
+        planejados.
+      </p>
+    </div>
+    <div class="col col-12 sm-col-12 md-col-6 px2 center">
+      <%= image_tag("riomaisb-info.png") %>
+    </div>
+  </div>
+</div>
+
+<div class="bg-green py4 white">
+  <div class="container">
+    <div class="clearfix">
+      <div class="col col-12 sm-col-12 md-col-6 px2 center">
+        <p>
+          <%= image_tag("rio.png") %>
+        </p>
+      </div>
+      <div class="col col-12 sm-col-12 md-col-6 px2">
+        <h2 class="caps mt0 mb2">O que a empresa e a cidade ganham com o Rio+B?</h2>
+        <p>
+          Ao redor do mundo, cada vez mais empresas estão redefinindo o conceito de sucesso em seus
+          negócios. O sucesso empresarial não é visto apenas como um empreendimento lucrativo, mas
+          também em impactos socioambientais positivos gerados pelas empresas.
+        </p>
+        <p>
+          O Rio+B conta com metodologias para medir o impacto socioambiental de um negócio e
+          ferramentas para planejar melhores práticas em áreas específicas. Através do programa, as
+          empresas terão consultoria para fortalecer seus pontos positivos e transformar os pontos
+          negativos em benefícios para o Rio de Janeiro.
+        </p>
+      </div>
     </div>
   </div>
 </div>
