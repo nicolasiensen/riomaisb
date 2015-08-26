@@ -1,28 +1,30 @@
-<div class="container">
-  <div class="clearfix">
-    <div class="col col-12 px2">
-      <div class="flex flex-center">
-        <div class="flex flex-auto">
-          <%= link_to root_path do
-            image_tag("riomaisb.png", class: "left")
-          end %>
-        </div>
-        <div class="right">
-          <div class="md-show">
-            <a class="btn btn-primary bg-white black caps h6 py2" href="#">O que é o Rio+B?</a>
-            <a class="btn btn-primary bg-white black caps h6 py2" href="#">O que a empresa e a cidade ganham?</a>
-            <a class="btn btn-primary bg-white black caps h6 py2" href="#">Como funciona?</a>
-            <a class="btn btn-primary bg-lime green caps h6" href="#">Participar</a>
+<div class="fixed bg-white" style="width:100%">
+  <div class="container">
+    <div class="clearfix">
+      <div class="col col-12 px2">
+        <div class="flex flex-center">
+          <div class="flex flex-auto">
+            <%= link_to root_path do
+              image_tag("riomaisb.png", class: "left py2", width: 70)
+            end %>
           </div>
-          <div class="md-hide">
-            <div class="relative inline-block dropdown" data-disclosure>
-              <button class="btn rounded fa fa-bars"></button>
-              <div data-details class="fixed top-0 right-0 bottom-0 left-0 dropdown-overlay"></div>
-              <div data-details class="absolute right-0 mt2 nowrap bg-white rounded dropdown-menu">
-                <a class="btn caps h6 p1 block" href="#">O que é o Rio+B?</a>
-                <a class="btn caps h6 p1 block" href="#">O que a empresa e a cidade ganham?</a>
-                <a class="btn caps h6 p1 block" href="#">Como funciona?</a>
-                <a class="btn btn-primary bg-lime green caps h6 block" href="#">Participar</a>
+          <div class="right">
+            <div class="md-show">
+              <a class="btn btn-primary bg-white black caps h6 py2" href="#what">O que é o Rio+B?</a>
+              <a class="btn btn-primary bg-white black caps h6 py2" href="#benefits">O que a empresa e a cidade ganham?</a>
+              <a class="btn btn-primary bg-white black caps h6 py2" href="#how-it-works">Como funciona?</a>
+              <a class="btn btn-primary bg-lime green caps h6" href="#">Participar</a>
+            </div>
+            <div class="md-hide">
+              <div class="relative inline-block dropdown" data-disclosure>
+                <button class="btn rounded fa fa-bars"></button>
+                <div data-details class="fixed top-0 right-0 bottom-0 left-0 dropdown-overlay"></div>
+                <div data-details class="absolute right-0 mt2 nowrap bg-white rounded dropdown-menu">
+                  <a class="btn btn-primary bg-white black caps h6 py2 px0 block" href="#what">O que é o Rio+B?</a>
+                  <a class="btn btn-primary bg-white black caps h6 py2 px0 block" href="#benefits">O que a empresa e a cidade ganham?</a>
+                  <a class="btn btn-primary bg-white black caps h6 py2 px0 block" href="#how-it-works">Como funciona?</a>
+                  <a class="btn btn-primary bg-lime green caps h6 block" href="#">Participar</a>
+                </div>
               </div>
             </div>
           </div>
@@ -32,8 +34,8 @@
   </div>
 </div>
 
-<div class="bg-green py1 bg-cover bg-center bg-city">
-  <div class="container center white py4">
+<div class="bg-green py4 bg-cover bg-center bg-city">
+  <div class="container center white mt4">
     <div class="clearfix">
       <div class="col col-12 px2">
         <h1 class="mt0 mb2 caps">
@@ -51,7 +53,7 @@
   </div>
 </div>
 
-<div class="container py3">
+<div class="container py4" id="what">
   <div class="clearfix">
     <div class="col col-12 sm-col-12 md-col-6 px2">
       <h2 class="green caps mt0 mb2">O que é o Rio+B?</h2>
@@ -76,7 +78,7 @@
   </div>
 </div>
 
-<div class="bg-green py4 white">
+<div class="bg-green py4 white" id="benefits">
   <div class="container">
     <div class="clearfix">
       <div class="col col-12 sm-col-12 md-col-6 px2 center">
@@ -102,7 +104,7 @@
   </div>
 </div>
 
-<div class="container py4">
+<div class="container py4" id="how-it-works">
   <div class="clearfix">
     <div class="sm-col-12 md-col-8 px2 mx-auto center">
       <h2 class="green caps mt0 mb2">Como funciona o programa?</h2>
