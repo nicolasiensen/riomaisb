@@ -2,4 +2,13 @@
 @import "basscss_and_override";
 @import "fontawesome/font-awesome.scss";
 
+.topbar {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
 .bg-city { background-image: image-url('bg.jpg'); }
