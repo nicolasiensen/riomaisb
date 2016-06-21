@@ -87,7 +87,8 @@
       <p>
         Em parceria com o <a href="http://resiliente.rio/">Rio Resiliente</a>, da Prefeitura do Rio e a <a href="http://www.ellenmacarthurfoundation.org/">Fundação Ellen MacArthur</a> (Think Tank líder global no conceito de economia circular), entre outras entidades focadas em desenvolvimento econômico, irá convidar as empresas da região metropolitana do Rio de Janeiro a avaliarem seu impacto socioambiental e implementarem uma agenda de melhoria para a cidade através dos negócios.
       </p>
-      <div class="hide">
+      <%= toggle_button "what-more" %>
+      <div id="what-more" class="hide">
         <p>
           O Sistema B é a ONG que lidera o movimento global de empresas B na América Latina, com o objetivo de redefinir o conceito de sucesso nos negócios, para que esse seja medido não só pelo lucro, mas também pelo impacto socioambiental positivo gerado por elas.
         </p>
@@ -119,7 +120,8 @@
         <p>
           Participar do Rio+B é um modo de descobrir novas formas de geração de valor e inovação nos negócios, destacando-se frente ao mercado tradicional pela mensuração e gestão do impacto socioambiental de sua empresa;
         </p>
-        <div class="hide">
+        <%= toggle_button "benefits-more", class: 'white regular btn' %>
+        <div class="hide" id="benefits-more">
           <p>
             O Rio+B, em sua Avaliação de Impacto, faz uso de tecnologia mundialmente reconhecida para mensuração de Impacto socioambiental. A mesma Avaliação de Impacto já foi utilizada por mais de 40 mil empresas em todo o mundo e vem sendo aprimorada nos últimos 10 anos. Esta tecnologia irá permitir que as empresas respondentes recebam um comparativo de seu desempenho em cada um dos pontos abordados (benchmarking) em relação às outras  empresas que já responderam ao questionário e às empresas da região metropolitana do Rio de Janeiro engajadas no Rio+B.
           </p>
