@@ -11,11 +11,12 @@
           <div class="right topbar">
             <div class="md-show">
               <div class="flex flex-center">
-                <a class="black caps h5 p2 regular decoration-none" href="#what">O que é o Rio+B?</a>
-                <a class="black caps h5 p2 regular decoration-none" href="#benefits">Por que participar?</a>
-                <a class="black caps h5 p2 regular decoration-none" href="#how-it-works">O que acontece?</a>
-                <a class="black caps h5 p2 regular decoration-none" href="#join">Como participar?</a>
-                <a class="black caps h5 p2 regular decoration-none" href="#who">Quem somos</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#what">O que é o Rio+B?</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#benefits">Por que participar?</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#how-it-works">O que acontece?</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#join">Como participar?</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#who">Quem somos</a>
+                <a class="black caps h6 p2 regular decoration-none" href="#faq">FAQ</a>
                 <a class="black h1 ml1 mr1" href="https://twitter.com/RiomaisB" target="_blank">
                   <i class="fa fa-twitter-square circle" aria-hidden="true"></i>
                 </a>
@@ -29,11 +30,12 @@
                 <button class="btn rounded fa fa-bars"></button>
                 <div data-details class="fixed top-0 right-0 bottom-0 left-0 dropdown-overlay"></div>
                 <div data-details class="absolute right-0 mt2 nowrap bg-white rounded dropdown-menu">
-                  <a class="black caps h5 p2 block regular" href="#what">O que é o Rio+B?</a>
-                  <a class="black caps h5 p2 block regular" href="#benefits">Por que participar?</a>
-                  <a class="black caps h5 p2 block regular" href="#how-it-works">O que acontece?</a>
-                  <a class="black caps h5 p2 block regular" href="#join">Como participar?</a>
-                  <a class="black caps h5 p2 block regular" href="#who">Quem somos</a>
+                  <a class="black caps h6 p2 block regular" href="#what">O que é o Rio+B?</a>
+                  <a class="black caps h6 p2 block regular" href="#benefits">Por que participar?</a>
+                  <a class="black caps h6 p2 block regular" href="#how-it-works">O que acontece?</a>
+                  <a class="black caps h6 p2 block regular" href="#join">Como participar?</a>
+                  <a class="black caps h6 p2 block regular" href="#who">Quem somos</a>
+                  <a class="black caps h6 p2 block regular" href="#faq">FAQ</a>
                   <a class="black h1 m2" href="https://twitter.com/RiomaisB">
                     <i class="fa fa-twitter-square circle" aria-hidden="true"></i>
                   </a>
@@ -52,7 +54,7 @@
 
 <div
   class="bg-green py4 bg-cover bg-center"
-  style="background-image: url(<%= image_url("bg#{(rand() * 4).ceil}.png") %>)">
+  style="background-image: url(<%= image_url("bg#{(rand() * 4).ceil}.jpg") %>)">
   <div class="container center white mt4">
     <div class="clearfix">
       <div class="col col-12 px2">
@@ -68,10 +70,8 @@
           Preencha a Avaliação de Impacto Rio + B<br />
           e descubra novas oportunidades de negócios
         </p>
-        <div class="mt3">
-          <a class="btn btn-primary bg-green white caps h3 m0 p2 px4" href="#">Participar</a><br />
-          Todo o processo é gratuito, online e sigiloso
-        </div>
+        <a class="btn btn-primary bg-green white caps h3 m0 p2 px4" href="#">Participar</a><br />
+        Todo o processo é gratuito, online e sigiloso
       </div>
     </div>
   </div>
@@ -101,15 +101,15 @@
       </div>
     </div>
     <div class="col col-12 sm-col-4 md-col-6 px2 center">
-      <%= image_tag("riomaisb-info.png", class: "circle") %>
+      <%= image_tag("oqueehriomaisb.jpg", class: "circle") %>
     </div>
   </div>
 </div>
 
-<div class="bg-green py4 white" id="benefits">
+<div class="bg-dark-green py4 white" id="benefits">
   <div class="container">
     <div class="clearfix">
-      <div class="col col-12 px2">
+      <div class="col col-12 px2 center">
         <h2 class="caps mt0 mb3 border-bottom center green border-green">Por que participar?</h2>
         <p>
           Rio+B é gratuito, online, sigiloso e de rápido preenchimento. São apenas 30 minutos do seu tempo e um impacto positivo enorme para sua empresa e para a cidade.
@@ -142,7 +142,7 @@
 
 <div class="container py4" id="how-it-works">
   <div class="clearfix">
-    <div class="col col-12 sm-col-8 px2">
+    <div class="col col-12 sm-col-8 md-col-6 px2">
       <h2 class="purple border-bottom border-purple caps mt0 mb2">O que acontece?</h2>
       <p>
         A Avaliação de Impacto Rio+B é sigilosa, gratuita, online e de rápido preenchimento: são 30 minutos do seu tempo. Ela é resultado da soma da ferramenta Quick Impact Assessment (Sistema B) e de alguns Indicadores de Circularidade (Ellen Macarthur Foundation);
@@ -170,42 +170,38 @@
         </a>
       </p>
     </div>
-    <div class="col col-12 sm-col-4 px2">
-      <%= image_tag("oqueacontece.png", class: "circle") %>
+    <div class="col col-12 sm-col-4 md-col-6 px2">
+      <%= image_tag("participar.jpg", class: "circle") %>
     </div>
   </div>
 </div>
 
 <div class="bg-green py4 white" id="join">
   <div class="container clearfix">
-    <div class="col col-12 px2 mx-auto">
-      <h2 class="caps mt0 mb2">Como participar?</h2>
+    <div class="col col-12 px2 mx-auto center">
+      <h2 class="caps mt0 mb2 dark-green border-bottom border-dark-green">Como participar?</h2>
       <p>
         Podem participar do Rio+B todas as empresas com sede e/ou operação na região metropolitana e na cidade do Rio de Janeiro. Não há restrição de porte, número de funcionários, faturamento ou setor em que atuam.
       </p>
       <p>
         Como as empresas podem participar - diversos níveis de engajamento:
       </p>
-      <ul>
-        <li>
-          Participante Rio+B: responde a Avaliação de Impacto Rio+B e toma consciência do impacto socioambiental da sua empresa;
-        </li>
-        <li>
-          Participante influenciador: convida seus fornecedores a também fazê-lo;
-        </li>
-        <li>
-          Participante Laboratório Rio+B (todos acima e...): aceita o compromisso de implementar melhorias num período de seis meses;
-        </li>
-      </ul>
+      <p>
+        Participante Rio+B: responde a Avaliação de Impacto Rio+B e toma consciência do impacto socioambiental da sua empresa;
+      </p>
+      <p>
+        Participante influenciador: convida seus fornecedores a também fazê-lo;
+      </p>
+      <p>
+        Participante Laboratório Rio+B (todos acima e...): aceita o compromisso de implementar melhorias num período de seis meses;
+      </p>
       <p>
         Como as organizações multilaterais, institutos e fundações empresariais podem participar:
       </p>
-      <ul>
-        <li>
-          Tornando-se um parceiro estratégico: Investindo recursos financeiro no projeto, por acreditar no seu potencial de Impacto para a cidade do Rio de Janeiro;
-        </li>
-      </ul>
-      <a class="btn btn-outline white caps h3 m0 p2 px4" href="#">Participar</a>
+      <p>
+        Tornando-se um parceiro estratégico: Investindo recursos financeiro no projeto, por acreditar no seu potencial de Impacto para a cidade do Rio de Janeiro;
+      </p>
+      <a class="btn btn-primary bg-dark-green caps h3 m0 p2 px4" href="#">Participar</a>
     </div>
   </div>
 </div>
@@ -227,45 +223,45 @@
 
 <div class="container py3 clearfix">
   <div class="col col-12 sm-col-12 md-col-2 px2 mb3">
-    <h4>Realização</h4>
+    <h5 class="gray">Realização</h5>
     <div class="clearfix">
       <%= image_tag "logos/realiza/LOGO_sq_sistema_B.png", class: "col col-4 sm-col-4 md-col-12" %>
     </div>
   </div>
   <div class="col col-12 sm-col-12 md-col-10 px2 mb3">
-    <h4>Concepção</h4>
+    <h5 class="gray">Concepção</h4>
     <div class="clearfix">
+      <%= image_tag "logos/concepcao/LOGO_sq_rioresiliente.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/concepcao/LOGO_sq_Ce100_Ellen.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/concepcao/LOGO_sq_league.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/concepcao/LOGO_sq_nbs.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/concepcao/LOGO_sq_pactodorio.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/concepcao/LOGO_sq_pares.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/concepcao/LOGO_sq_rioresiliente.png", class: "col col-4 sm-col-4 md-col-2" %>
+      <%= image_tag "logos/concepcao/LOGO_sq_pactodorio.png", class: "col col-4 sm-col-4 md-col-2" %>
+      <%= image_tag "logos/concepcao/LOGO_sq_nbs.png", class: "col col-4 sm-col-4 md-col-2" %>
     </div>
   </div>
   <div class="col col-12 px2 mb3">
-    <h4>Parceiros estratégicos</h4>
+    <h5 class="gray">Parceiros estratégicos</h4>
     <div class="clearfix">
       <%= image_tag "logos/parceiros_estrategicos/LOGO_hz_BMW_found.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/parceiros_estrategicos/LOGO_hz_CAF.png", class: "col col-4 sm-col-4 md-col-2" %>
     </div>
   </div>
   <div class="col col-12 px2 mb3">
-    <h4>Organizações empresariais</h4>
+    <h5 class="gray">Organizações empresariais</h4>
     <div class="clearfix">
-      <%= image_tag "logos/organizacoes/LOGO_FIRJAN.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/organizacoes/LOGO_sq_ACRIO.png", class: "col col-4 sm-col-4 md-col-2" %>
+      <%= image_tag "logos/organizacoes/LOGO_sq_SEBRAE.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/organizacoes/LOGO_sq_CEBDS.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/organizacoes/LOGO_sq_rionegocios.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/organizacoes/LOGO_sq_SEBRAE.png", class: "col col-4 sm-col-4 md-col-2" %>
+      <%= image_tag "logos/organizacoes/LOGO_sq_ACRIO.png", class: "col col-4 sm-col-4 md-col-2" %>
+      <%= image_tag "logos/organizacoes/LOGO_FIRJAN.png", class: "col col-4 sm-col-4 md-col-2" %>
     </div>
   </div>
   <div class="col col-12 px2">
-    <h4>Parceiros de engajamento</h4>
+    <h5 class="gray">Parceiros de engajamento</h4>
     <div class="clearfix">
+      <%= image_tag "logos/parceiros_engajamento/LOGO_sq_phi.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/parceiros_engajamento/LOGO_sq_carioteca.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/parceiros_engajamento/LOGO_sq_casafluminense.png", class: "col col-4 sm-col-4 md-col-2" %>
-      <%= image_tag "logos/parceiros_engajamento/LOGO_sq_phi.png", class: "col col-4 sm-col-4 md-col-2" %>
       <%= image_tag "logos/parceiros_engajamento/LOGO_sq_rioamocuido.png", class: "col col-4 sm-col-4 md-col-2" %>
     </div>
   </div>
