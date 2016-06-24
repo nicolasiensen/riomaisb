@@ -5,6 +5,7 @@ $lime: #B4DF00;
 $black: #37434E;
 $purple: #731344;
 $yellow: #FAA700;
+$cyan: #00FFFF;
 $border-width: 3px;
 $font-family: 'Helvetica Neue', Helvetica, sans-serif;
 $button-font-family: 'Novecento', 'Helvetica Neue', Helvetica, sans-serif;
@@ -15,6 +16,7 @@ body { font-weight: 200 }
 .bg-dark-green { background-color: $dark-green }
 .dark-green { color: $dark-green }
 .border-dark-green { border-color: $dark-green }
+.bg-cyan { background-color: $cyan}
 .caps { letter-spacing: 0; }
 h1, .h1 { font-family: $button-font-family }
 h2, .h2 { font-family: $button-font-family }
