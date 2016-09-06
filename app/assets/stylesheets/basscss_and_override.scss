@@ -12,7 +12,11 @@ $button-font-family: 'Novecento', 'Helvetica Neue', Helvetica, sans-serif;
 
 @import "basscss-sass";
 
-body { font-weight: 200 }
+body {
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
 .bg-dark-green { background-color: $dark-green }
 .dark-green { color: $dark-green }
 .border-dark-green { border-color: $dark-green }
