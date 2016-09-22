@@ -16,6 +16,7 @@
                 <a class="black caps h5 p2 regular decoration-none" href="#how-it-works">O que acontece?</a>
                 <a class="black caps h5 p2 regular decoration-none" href="#join">Como participar?</a>
                 <a class="black caps h5 p2 regular decoration-none" href="#who">Quem somos</a>
+                <a class="green caps h5 p2 regular decoration-none" href="<%= asset_url('faq.pdf') %>" target="_blank">FAQ</a>
                 <a class="black h1 ml1 mr1" href="https://twitter.com/RiomaisB" target="_blank">
                   <i class="fa fa-twitter-square circle" aria-hidden="true"></i>
                 </a>
@@ -34,6 +35,7 @@
                   <a class="black caps h5 p2 block regular" href="#how-it-works">O que acontece?</a>
                   <a class="black caps h5 p2 block regular" href="#join">Como participar?</a>
                   <a class="black caps h5 p2 block regular" href="#who">Quem somos</a>
+                  <a class="black caps h5 p2 block regular" href="<%= asset_url('faq.pdf') %>" target="_blank">FAQ</a>
                   <a class="black h1 m2" href="https://twitter.com/RiomaisB" target="_blank">
                     <i class="fa fa-twitter-square circle" aria-hidden="true"></i>
                   </a>
@@ -233,7 +235,13 @@
       O Rio+B é uma realização do <a href="http://www.sistemab.org/br/inicio" target="_blank">Sistema B</a> e foi concebido em colaboração com muitas organizações. São elas: a Prefeitura do Rio de Janeiro, através do <a href="http://resiliente.rio/" target="_blank">Rio Resiliente</a>,  a <a href="http://www.ellenmacarthurfoundation.org/pt/fundacao-ellen-macarthur/a-fundacao" target="_blank">Ellen MacArthur Foundation</a>, o maior think tank do mundo de Economia Circular, a <a href="http://www.leagueofintrapreneurs.com/" target="_blank">The League of Intrapreneurs</a>, organização internacional que trabalha na identificação e empoderamento de intraempreendedores mais conscientes e ativos em suas organizações, a <a href="http://www.pares.etc.br/" target="_blank">Pares</a>, consultoria em estratégia, inovação e desenvolvimento organizacional sistêmico, o Pacto do Rio, um conjunto de compromissos articulados que busca alinhar os objetivos da população com os diversos setores da sociedade, e a <a href="http://www.nobullshit.com.br/" target="_blank">NBS</a>, agência de comunicação com longa trajetória em projetos de impacto. Tudo isto foi possível graças à parceria da <a href="http://www.caf.com/pt" target="_blank">CAF, Banco de Desenvolvimento da América Latina</a> e da <a href="http://www.bmw-stiftung.de/en/" target="_blank">BMW Foundation</a>, que tem como prioridade o apoio à inovação social.
     </p>
     <p>
-      O Rio+B conta ainda com o apoio de pessoas físicas que acreditam no poder do impacto positivo gerado pela iniciativa privada. No começo foram Claudia Lima, Denise Chaer, Marcos Simões, Ramon Marmolejos e Zoe Fitzgerald. Todas as imagens utilizadas pelo projeto foram gentilmente cedidas por Pietro Baroni.
+      O Rio+B conta ainda com o apoio de pessoas físicas que acreditam no poder do impacto positivo gerado pela iniciativa privada. No começo foram Claudia Lima, Denise Chaer, Marcos Simões, Ramon Marmolejos e Zoe Fitzgerald.
+    </p>
+    <p>
+      Todas as imagens utilizadas pelo projeto foram gentilmente cedidas por Pietro Baroni.
+    </p>
+    <p>
+      Em caso de dúvidas sobre o projeto, você pode escrever para o email <a href="mailto:duvidas@riomaisb.org.br">duvidas@riomaisb.org.br</a>, mas antes de entrar em contato, por favor leia o <a href="<%= asset_url('faq.pdf') %>" target="_blank">documento de perguntas frequentes</a> (FAQ).
     </p>
     <p>
       Hoje temos um grupo de trabalho ativo e voluntário que opera em governança horizontal e que constitui o grupo de pessoas que sustentam o Rio+B. A elas o nosso muito obrigada pela rede de confiança tecida em torno de um propósito. São elas: Alda Marina Campos, Aline Pimenta, Ana Sarkovas, Anna Polatscheck, Camila Matos, Daniella Gobbo, Florencia Estrade, Luciana Nery, Luísa Santiago, Luiza Serpa, Paula Quintas, Pedro Junqueira, Sandra Ortiz-Diaz, Taciana Abreu, Thaís Miquelino e Ursulla Araújo.
@@ -242,7 +250,7 @@
       Para entrar em contato com os líderes do projeto, você pode escrever para  <a href="mailto:contato@riomaisb.org.br">contato@riomaisb.org.br</a>. Em caso de dúvidas sobre o projeto, você pode escrever para o email duvidas@riomaisb.org.br, mas antes de entrar em contato, por favor leia o documento de perguntas frequentes.
     </p>
     <p>
-      Se você for da imprensa, baixe aqui o release do Projeto. Caso tenha interesse em realizar alguma matéria, não hesite em escrever para <a href="mailto:imprensa@riomaisb.org.br">imprensa@riomaisb.org.br</a>.
+      Se você for da imprensa, <%= link_to "baixe aqui o release", asset_url('release.pdf'), target: :blank %> do Projeto. Caso tenha interesse em realizar alguma matéria, não hesite em escrever para <a href="mailto:imprensa@riomaisb.org.br">imprensa@riomaisb.org.br</a>.
     </p>
   </div>
 </div>
